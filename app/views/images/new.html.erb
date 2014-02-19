@@ -1,0 +1,12 @@
+<%= form_for @image do |f| %>
+  <%= f.error_messages %>
+
+  <div><%= f.label :title %><br />
+    <%= f.text_field :title, :autofocus => true %></div>
+
+  <div><%= f.label :avatar %><br />
+    <%= f.file_field :avatar %></div>
+
+
+  <div><%= f.submit "Upload" %></div>
+<% end %>

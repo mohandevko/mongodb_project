@@ -50,11 +50,13 @@
           <div class="container nav-collapse">
             <ul class="nav" style="float:right;">
               <% if current_user %>
-                <li><%= link_to "Settings", new_user_session_path  %></li>
+                <li><%= link_to "Settings", edit_setting_path(current_user)  %></li>
+                <li><%= link_to "Upload Image", new_image_path  %></li>
                 <li><%= link_to "Logout", destroy_user_session_path,:method => :delete  %></li>
               <% else %>
                 <li><%= link_to "Sign In", new_user_session_path  %></li>
                 <li><%= link_to "Sign Up", new_user_registration_path  %></li>
+                <li><%= link_to "Login With Facebook", "/auth/facebook"  %></li>
               <% end %>
             </ul>
           </div><!--/.nav-collapse -->

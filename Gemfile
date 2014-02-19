@@ -7,7 +7,10 @@ gem 'rails', '4.0.0'
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 gem 'devise'
 gem 'dynamic_form'
-
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
